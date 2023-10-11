@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden !important;
+}
+
+/* cursor section */
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e85d04;
+    position: absolute;
+    transition: 200ms linear;
+    z-index: 5;
+  }
+  
+
+/* navbar section */
+
+.navbar{
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.navbar #offers {
+    background-color: #8e58fb;
+    color: white;
+    border-radius: 50px;
+    padding: 0.7rem;
+}
+
+.navbar #tracking {
+    border: 1px solid #8e58fb;
+    padding: 0.7rem;
+    border-radius: 50px;
+    color: #8e58fb;
+}
+
+#drp {
+    margin-top: 26px;
+    margin-left: 21px;
+}
+
+#drp li a {
+    color: gray;
+}
+
+#social_media .nav-link {
+    margin-left: 0;
+}
+
+#social_media i {
+    color: #8e58fb;
+    font-size: 18px;
+    border: 1px solid #8e58fb;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+#social_media i:hover {
+    background-color: #8e58fb;
+    color: white;
+}
+
+
+/* banner section */
+
+.banner{
+    background-color: #ffead8;
+}
+
+.banner .banner_content h2{
+    font-size: 75px;
+    color: #663db4;
+    font-weight: 800;
+}
+.banner .banner_content h5{
+    font-size: 35px;
+    color: #663db4;
+}
+
+.banner form .form_back{
+    background-color: white;
+    width: 75%;
+}
+.banner form .form_back input{
+    width: 60%;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+}
+.banner form .form_back button{
+    width: 39%;
+    padding: 0.8rem;
+    background: linear-gradient(#ff9c68, #ff5e07);
+    color: white;
+    border: none;
+}
+.banner .button_grp a{
+    text-decoration: none;
+}
+.banner .button_grp a button{
+    background-color: #8e58fb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* call section */
+
+.right_call{
+    background-color: white;
+    width: 20%;
+    position: fixed;
+    top: 50%;
+    right: -12%;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    transition: 0.5s;
+    padding: 0.6rem;
+}
+.right_call a{
+    text-decoration: none;
+    color: black;
+}
+
+.right_call:hover{
+    right: 0;
+}
+
+/* hamnbur */
+
+#hamburger{
+    border: none;
+    background: none;
+}
+#hamburger span i{
+    font-size: 25px;
+}
+
+/* core value section */
+
+.core-value .core-value-cont h2{
+    font-size: 88px;
+    color: #663db4;
+    font-weight: 800;
+}
+
+/* why choose us section */
+
+.why_choose_us{
+    background-image: url(../banner/reception-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.why_choose_us .why_choose_cont h2{
+    color: white;
+    letter-spacing: 2px;
+}
+.why_choose_us .why_choose_cont ul{
+    list-style: none;
+    padding: 0;
+}
+.why_choose_us .why_choose_cont ul li i{
+    color: #ff8900;
+}
+.why_choose_us .why_choose_cont ul li{
+    margin-top: 15px;
+    color: white;
+    transition: 0.4s;
+}
+.why_choose_us .why_choose_cont ul li:hover{
+    color: #ff8900;
+}
+
+/*   */
+
+.services_section h2{
+    color: #470271;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* service section */
+
+.services_section .srv_card{
+    box-shadow: 0 3px 16px 0 rgba(154, 160, 185, 0.05), 0 10px 40px 0 rgba(166, 173, 201, 0.41)!important;
+}
+.services_section .srv_card h4{
+    color: #470271;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.services_section .srv_card p{
+    color: gray;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 20px;
+}
+.services_section .srv_card .learn_more button{
+    border: 2px solid #8e58fb;
+    color: #8e58fb;
+    background: none;
+    padding: 15px 25px;
+    transition: 0.4s;
+}
+.services_section .srv_card .learn_more button:hover{
+    background-color: #8e58fb;
+    color: white;
+   
+}
+
+/* our presence section */
+
+
+.our_presence h2{
+    color: #470271;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.our_presence .presence_bg i{
+    font-size: 80px;
+}
+.our_presence .presence_bg{
+    background-image: url(../card/pre-back-img.png);
+    padding: 2rem;
+}
+.our_presence .presence_card{
+    box-shadow: 0 3px 16px 0 rgba(154, 160, 185, 0.05), 0 10px 40px 0 rgba(166, 173, 201, 0.41);
+}
+.our_presence .presence_card h6{
+    background-color: #663db4;
+    padding: 0.8rem;
+    color: white;
+    text-align: center;
+}
+.our_presence .presence_card .map_details a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+}
+.our_presence .presence_card .map_details{
+    padding: 1rem;
+}
+
+
+/* footer section */
+
+footer{
+    background-color: #f0fafb;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    margin-top: 20px;
+}
+footer ul li a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: grey;
+    transition: 0.4s;
+
+}
+
+footer ul li a:hover{
+    color: #ff9c68;
+}
+
+/* footer bottom section */
+
+.bottom_footer{
+    background-color: #d6c4fa;
+    color: #470271;
+}
+.bottom_footer span{
+    font-size: 0.7rem;
+}

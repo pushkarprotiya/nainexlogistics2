@@ -1,0 +1,62 @@
+.whatsapp_icon{
+    position: fixed;
+    bottom: 8%;
+    right: 3%;
+}
+.whatsapp_icon i {
+    background-color: #35ffc3;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: ripple 0.7s linear infinite;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(2, 207, 170, 0.3), 0 0 0 12px rgba(2, 207, 170, 0.3), 0 0 0 20px rgba(2, 207, 170, 0.3), 0 0 0 28px rgba(2, 207, 170, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 12px rgba(2, 207, 170, 0.3), 0 0 0 20px rgba(2, 207, 170, 0.3), 0 0 0 28px rgba(2, 207, 170, 0.3), 0 0 0 40px rgba(2, 207, 170, 0);
+    }
+}
+
+
+/* preloader section */
+
+
+/* preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 100;
+    /* makes sure it stays on top */
+  }
+  
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+  }
+  
