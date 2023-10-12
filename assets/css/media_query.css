@@ -1,10 +1,4 @@
 @media screen and (max-width: 768px){
-    .form_back{
-        width: 100% !important;
-    }
-    .banner form .form_back input {
-        width: 59.5%;
-    }
     .right_call {
         right: -40%;
         width: 65%;
@@ -12,23 +6,9 @@
     .right_call img{
         width: 50px;
     }
-    .banner .button_grp a button {
-        padding: 10px 13px;
-    }
     /* body{
         overflow-x: hidden;
     } */
-    .navbar .navbar-nav .nav-item .nav-link {
-        margin-left: 0px;
-        margin-top: 10px;
-    }
-    .navbar #social_media{
-        display: none;
-    }
-    #drp {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
     .whatsapp_icon {
         position: fixed;
         bottom: 8%;
@@ -36,5 +16,37 @@
     }
     .banner .banner_content h5 {
         font-size: 34px;
+    }
+
+    .top-header{
+        width: 100%;
+    }
+    #desk_nav .menu li {
+        font-size: 0.5rem;
+        margin-left: 20px;
+        margin-top: 19px;
+    }
+    #desk_nav .menu{
+        margin-left: -1.5rem;
+    }
+    .navbar-brand img{
+        width: 80px;
+    }
+    .navbar-toggler{
+        padding: 20px;
+        font-size: 24px;
+        display: inline-block;
+
+    }
+    #desk_cont{
+        width: 90%;
+    }
+
+    #desk_nav .dropdown_section .dropdown-menu{
+        margin-top: 0px;
+    }
+    #desk_nav{
+        position: sticky !important;
+        z-index: 100;
     }
 }
