@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jqueries cdnj -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* preloader */
+        .preloader {
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .preloader_back {
+            /* border: 1px solid black; */
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .preloader_spin {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #f00;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            animation: spin 1s ease-in-out infinite ;
+            top: 0;
+        }
+
+        .preloader_logo {
+            /* border: 1px solid red; */
+            width: 100px;
+            height: 100px;
+            transform: translateX(50px) translateY(50px);
+
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- preloader -->
+
+    <div class="preloader">
+        <div class="preloader_back">
+            <div class="preloader_logo">
+                <img src="assets/logo/nainex_logistics_4.png" alt="" width="100%">
+            </div>
+            <div class="preloader_spin"></div>
+        </div>
+
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quibusdam nisi, doloremque labore eaque ea voluptates nobis velit ducimus officia perferendis quos molestiae laborum iure omnis nulla repudiandae dignissimos sunt.</p>
+
+
+
+    <!-- preloader script -->
+
+    <script>
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('.preloader_back').delay(390).fadeOut('slow'); // will first fade out the loading animation 
+            $('.preloader').delay(400).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({ 'overflow': 'visible' });
+        })
+    </script>
+
+</body>
+
+</html>
